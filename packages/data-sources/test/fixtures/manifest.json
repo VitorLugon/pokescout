@@ -1,0 +1,20 @@
+{
+  "sourceUrl": "https://labs.limitlesstcg.com/0009/standings",
+  "decklistUrl": "https://labs.limitlesstcg.com/0009/player/0509/decklist",
+  "retrievedAt": "2026-10-14T16:30:06.910Z",
+  "scope": "Five selected standings entries, full single public decklist; original title and embedded data envelopes retained. User/auth and executable scripts removed.",
+  "captures": [
+    {
+      "filename": "standings.html",
+      "sourceUrl": "https://labs.limitlesstcg.com/0009/standings",
+      "retrievedAt": "2026-10-14T16:30:06.910Z",
+      "originalSha256": "31fe716a3a2c55cc686985cc49e266c48d2b2057c87689f18ab6cbb62171f24b"
+    },
+    {
+      "filename": "decklist.html",
+      "sourceUrl": "https://labs.limitlesstcg.com/0009/player/0509/decklist",
+      "retrievedAt": "2026-10-14T16:30:58.149Z",
+      "originalSha256": "4c71f43417761364c3e6c9ab365526a3cd6a09d54730ba94ef07876dde6cd775"
+    }
+  ]
+}

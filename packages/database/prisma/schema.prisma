@@ -1,0 +1,230 @@
+generator client {
+  provider = "prisma-client"
+  output = "../src/generated/prisma"
+  moduleFormat = "esm"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum SyncStatus {
+  RUNNING
+  SUCCESS
+  PARTIAL
+  FAILED
+}
+
+enum DecklistStatus {
+  UNAVAILABLE
+  AVAILABLE
+  IMPORTED
+  FAILED
+}
+
+model Player {
+  id String @id @default(uuid())
+  displayName String
+  createdAt DateTime @default(now())
+  aliases PlayerAlias[]
+  identities SourceIdentity[]
+  entries TournamentEntry[]
+  reviewsAsA IdentityReview[] @relation("ReviewA")
+  reviewsAsB IdentityReview[] @relation("ReviewB")
+}
+
+model PlayerAlias {
+  id String @id @default(uuid())
+  playerId String
+  player Player @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  originalName String
+  normalizedName String
+  searchKey String
+  source String
+  sourceUrl String
+  lastSyncedAt DateTime
+  @@unique([playerId, originalName])
+  @@index([searchKey])
+  @@index([normalizedName])
+}
+
+model SourceIdentity {
+  id String @id @default(uuid())
+  playerId String
+  player Player @relation(fields: [playerId], references: [id], onDelete: Restrict)
+  source String
+  scope String
+  externalId String
+  sourceUrl String
+  lastSyncedAt DateTime
+  @@unique([source, scope, externalId])
+  @@index([playerId])
+}
+
+model Tournament {
+  id String @id @default(uuid())
+  source String
+  externalId String
+  division String?
+  name String
+  dateLabel String
+  eventDate String?
+  resultsCoverage String @default("COMPLETE_STANDINGS")
+  reportedPlayerCountApproximate Boolean @default(false)
+  startsAt DateTime?
+  format String?
+  expectedDeckSize Int?
+  country String?
+  season Int?
+  reportedPlayerCount Int?
+  sourceCompleted Boolean? @default(false)
+  fullySynchronized Boolean @default(false)
+  sourceUrl String
+  upstreamIds Json
+  raw Json
+  lastSyncedAt DateTime
+  entries TournamentEntry[]
+  duplicateEventsAsA TournamentDuplicateCandidate[] @relation("EventDuplicateA")
+  duplicateEventsAsB TournamentDuplicateCandidate[] @relation("EventDuplicateB")
+  syncRuns SyncRun[]
+  @@unique([source, externalId, division])
+  @@index([startsAt])
+  @@index([season, division])
+}
+
+model TournamentEntry {
+  id String @id @default(uuid())
+  tournamentId String
+  tournament Tournament @relation(fields: [tournamentId], references: [id], onDelete: Restrict)
+  playerId String
+  player Player @relation(fields: [playerId], references: [id], onDelete: Restrict)
+  externalId String
+  originalName String
+  country String?
+  placement Int?
+  points Int?
+  wins Int?
+  losses Int?
+  ties Int?
+  disqualified Boolean?
+  sourceUrl String
+  lastSyncedAt DateTime
+  raw Json
+  duplicateResultsAsA ResultDuplicateCandidate[] @relation("ResultDuplicateA")
+  duplicateResultsAsB ResultDuplicateCandidate[] @relation("ResultDuplicateB")
+  deck Deck?
+  @@unique([tournamentId, externalId])
+  @@index([playerId, tournamentId])
+}
+
+model Deck {
+  id String @id @default(uuid())
+  entryId String @unique
+  entry TournamentEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  externalId String
+  source String
+  sourceUrl String
+  lastSyncedAt DateTime
+  archetypeId String?
+  archetypeName String?
+  decklistUrl String?
+  availableAtSource Boolean @default(false)
+  listStatus DecklistStatus @default(UNAVAILABLE)
+  listImportedAt DateTime?
+  lastListAttemptAt DateTime?
+  lastListError String?
+  rawList Json?
+  reviews DecklistReview[]
+  cards DeckCard[]
+}
+
+model DeckCard {
+  id String @id @default(uuid())
+  deckId String
+  deck Deck @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  position Int
+  category String
+  quantity Int
+  name String
+  setCode String
+  language String?
+  collectorNumber String
+  @@unique([deckId, position])
+}
+
+model SyncRun {
+  id String @id @default(uuid())
+  tournamentId String?
+  tournament Tournament? @relation(fields: [tournamentId], references: [id], onDelete: Restrict)
+  source String
+  externalId String
+  division String?
+  sourceUrl String
+  status SyncStatus @default(RUNNING)
+  startedAt DateTime @default(now())
+  finishedAt DateTime?
+  entriesReceived Int @default(0)
+  entriesSaved Int @default(0)
+  listsImported Int @default(0)
+  pendingLists Int @default(0)
+  reviews DecklistReview[]
+  issues Json
+  @@index([source, externalId, division, startedAt])
+  @@index([status])
+}
+
+model IdentityReview {
+  id String @id @default(uuid())
+  playerAId String
+  playerA Player @relation("ReviewA", fields: [playerAId], references: [id], onDelete: Restrict)
+  playerBId String
+  playerB Player @relation("ReviewB", fields: [playerBId], references: [id], onDelete: Restrict)
+  decision String
+  reviewer String
+  reason String
+  evidenceUrls Json
+  evidence Json
+  createdAt DateTime @default(now())
+  @@index([playerAId, playerBId, createdAt])
+}
+model DecklistReview {
+  id String @id @default(uuid())
+  deckId String
+  deck Deck @relation(fields: [deckId], references: [id], onDelete: Restrict)
+  runId String
+  run SyncRun @relation(fields: [runId], references: [id], onDelete: Restrict)
+  outcome String
+  sourceUrl String?
+  beforeCards Json
+  afterCards Json?
+  previousImportedAt DateTime?
+  retrievedAt DateTime?
+  error String?
+  createdAt DateTime @default(now())
+  @@index([deckId, createdAt])
+  @@index([runId])
+}
+
+model TournamentDuplicateCandidate {
+  id String @id @default(uuid())
+  tournamentAId String
+  tournamentA Tournament @relation("EventDuplicateA", fields: [tournamentAId], references: [id], onDelete: Cascade)
+  tournamentBId String
+  tournamentB Tournament @relation("EventDuplicateB", fields: [tournamentBId], references: [id], onDelete: Cascade)
+  evidence Json
+  detectedAt DateTime @default(now())
+  results ResultDuplicateCandidate[]
+  @@unique([tournamentAId, tournamentBId])
+}
+model ResultDuplicateCandidate {
+  id String @id @default(uuid())
+  entryAId String
+  entryA TournamentEntry @relation("ResultDuplicateA", fields: [entryAId], references: [id], onDelete: Cascade)
+  entryBId String
+  entryB TournamentEntry @relation("ResultDuplicateB", fields: [entryBId], references: [id], onDelete: Cascade)
+  tournamentCandidateId String
+  tournamentCandidate TournamentDuplicateCandidate @relation(fields: [tournamentCandidateId], references: [id], onDelete: Cascade)
+  evidence Json
+  detectedAt DateTime @default(now())
+  @@unique([entryAId, entryBId])
+}

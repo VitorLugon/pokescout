@@ -1,0 +1,38 @@
+{
+  "catalogs": {
+    "labs": {
+      "url": "https://labs.limitlesstcg.com/",
+      "retrievedAt": "2026-10-14T22:04:22.340Z"
+    },
+    "main": {
+      "url": "https://limitlesstcg.com/tournaments",
+      "retrievedAt": "2026-10-14T22:12:42.261Z"
+    }
+  },
+  "emptyDivision": {
+    "url": "https://labs.limitlesstcg.com/0067/SR/standings",
+    "coverage": "UNKNOWN"
+  },
+  "platformLabel": {
+    "url": "https://limitlesstcg.com/tournaments/295",
+    "lastSyncedAt": "2026-10-15T01:46:09.858Z",
+    "representativeResultRows": 2,
+    "eventLocationLabel": "ptcgo"
+  },
+  "conflictingProfile": {
+    "url": "https://limitlesstcg.com/tournaments/520",
+    "capturedOnLocalDate": "2026-10-14",
+    "timezone": "America/Sao_Paulo",
+    "representativeResultRows": 4,
+    "publishedRowsInOriginal": 274,
+    "repeatedProfileId": "8549",
+    "conflictingPlacements": [101, 259]
+  },
+  "overlap": {
+    "url": "https://limitlesstcg.com/tournaments/581",
+    "lastSyncedAt": "2026-10-15T00:47:37.306Z",
+    "representativeResultRows": 3,
+    "publishedRowsInOriginal": 547,
+    "reportedParticipants": 2927
+  }
+}

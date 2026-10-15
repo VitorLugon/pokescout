@@ -1,0 +1,4 @@
+{
+  "name": "@tcg-scout/application", "private": true, "type": "module", "exports": "./src/index.ts",
+  "dependencies": { "@tcg-scout/database": "workspace:*", "@tcg-scout/shared": "workspace:*", "@tcg-scout/data-sources": "workspace:*", "zod": "^4.0.0" }
+}

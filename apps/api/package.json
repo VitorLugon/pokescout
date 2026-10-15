@@ -1,0 +1,4 @@
+{
+  "name": "@tcg-scout/api", "private": true, "type": "module",
+  "dependencies": { "@tcg-scout/application": "workspace:*", "@tcg-scout/database": "workspace:*", "@tcg-scout/shared": "workspace:*", "fastify": "^5.0.0", "zod": "^4.0.0" }
+}

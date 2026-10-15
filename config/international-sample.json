@@ -1,0 +1,10 @@
+{
+  "events": [
+    { "label": "EUIC London 2026 — Europe", "url": "https://labs.limitlesstcg.com/0054/standings", "maxDecklists": 1, "expectedDeckSize": 60 },
+    { "label": "Regional Melbourne 2026 — Oceania", "url": "https://labs.limitlesstcg.com/0066/standings", "maxDecklists": 1, "expectedDeckSize": 60 },
+    { "label": "NAIC New Orleans 2026 — North America", "url": "https://labs.limitlesstcg.com/0070/standings", "maxDecklists": 1, "expectedDeckSize": 60 },
+    { "label": "Worlds San Francisco 2026", "url": "https://labs.limitlesstcg.com/0071/standings", "maxDecklists": 1, "expectedDeckSize": 60 },
+    { "label": "Champions League Yokohama 2026 — Japan", "url": "https://limitlesstcg.com/tournaments/569", "maxDecklists": 1, "expectedDeckSize": 60 },
+    { "label": "Korean League Final Season 2026 — Korea", "url": "https://limitlesstcg.com/tournaments/567", "maxDecklists": 1, "expectedDeckSize": 60 }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+.research/
+.cache/
+dist/
+.pnpm-store/
+.env
+.env.*
+!.env.example
+packages/database/src/generated/

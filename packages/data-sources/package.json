@@ -1,0 +1,4 @@
+{
+  "name": "@tcg-scout/data-sources", "private": true, "type": "module", "exports": "./src/index.ts",
+  "dependencies": { "@tcg-scout/shared": "workspace:*", "cheerio": "^1.0.0", "zod": "^4.0.0" }
+}

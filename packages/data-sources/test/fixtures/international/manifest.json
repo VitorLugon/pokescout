@@ -1,0 +1,123 @@
+[
+  {
+    "key": "main-index",
+    "url": "https://limitlesstcg.com/tournaments",
+    "retrievedAt": "2026-10-14T18:26:10.420Z",
+    "selectedFixtureRows": true,
+    "originalSha256": "df634242e9064f76ad558650d0aeed2e02b7fd9fa278a446192966458c979b56"
+  },
+  {
+    "key": "labs-0054",
+    "url": "https://labs.limitlesstcg.com/0054/standings",
+    "retrievedAt": "2026-10-14T18:26:14.851Z",
+    "selectedFixtureRows": true,
+    "originalSha256": "afb58200ae5c0eca43f118b232bf4360930c759499912a85e44c2344c8ee0654"
+  },
+  {
+    "key": "labs-0054-list",
+    "url": "https://labs.limitlesstcg.com/0054/player/2583/decklist",
+    "retrievedAt": "2026-10-14T18:26:17.093Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "cff87301cc8d44090fe998d58cea94ca983de59ec5dbde1a35f00a50a8b461a5"
+  },
+  {
+    "key": "labs-0066",
+    "url": "https://labs.limitlesstcg.com/0066/standings",
+    "retrievedAt": "2026-10-14T18:26:18.923Z",
+    "selectedFixtureRows": true,
+    "originalSha256": "05cd0039fdb7f910768676773407496c6f23aee9b9f3a20478ad08a13c7a4b4e"
+  },
+  {
+    "key": "labs-0066-list",
+    "url": "https://labs.limitlesstcg.com/0066/player/0490/decklist",
+    "retrievedAt": "2026-10-14T18:26:20.667Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "0bee5ed00880f8bebb8cf763225affa01954804cb42519c43c4f797eabf3362b"
+  },
+  {
+    "key": "labs-0070",
+    "url": "https://labs.limitlesstcg.com/0070/standings",
+    "retrievedAt": "2026-10-14T18:26:22.846Z",
+    "selectedFixtureRows": true,
+    "originalSha256": "894a2d7bab33d505a0c117c6f5adecbd2c7817e9d3de8369ca8c25b06b07255c"
+  },
+  {
+    "key": "labs-0070-list",
+    "url": "https://labs.limitlesstcg.com/0070/player/2083/decklist",
+    "retrievedAt": "2026-10-14T18:26:24.978Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "1d4cec87548afdcd7a9667d37d7cac0a1da03cae0c099ae49e4cef90b0358a75"
+  },
+  {
+    "key": "labs-0071",
+    "url": "https://labs.limitlesstcg.com/0071/standings",
+    "retrievedAt": "2026-10-14T18:26:26.703Z",
+    "selectedFixtureRows": true,
+    "originalSha256": "ea669993645612a7913d514acaafae6d93cdd1d4bcc540b33d356a706b896743"
+  },
+  {
+    "key": "labs-0071-list",
+    "url": "https://labs.limitlesstcg.com/0071/player/0103/decklist",
+    "retrievedAt": "2026-10-14T18:26:28.317Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "55c4dcaf0af61acc571610e3fe134eba97fa8c7825b6c5548777933b4acc53f0"
+  },
+  {
+    "key": "main-569",
+    "url": "https://limitlesstcg.com/tournaments/569",
+    "retrievedAt": "2026-10-14T18:26:30.315Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "1202fd98de59119d921d89a7fb67ebc1719151dce32b603805bf7129b10643fe"
+  },
+  {
+    "key": "main-569-list",
+    "url": "https://limitlesstcg.com/decks/list/29453",
+    "retrievedAt": "2026-10-14T18:26:31.822Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "8b735f08f99d8833f7668cf040a7b0da17a441115e872a2de1075cb83f8411ce"
+  },
+  {
+    "key": "main-567",
+    "url": "https://limitlesstcg.com/tournaments/567",
+    "retrievedAt": "2026-10-14T18:26:33.345Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "32a14c7d8060fc4f6636452fe69ffbf1d11bdd1d1c8380290c3179301523d7e6"
+  },
+  {
+    "key": "main-567-list",
+    "url": "https://limitlesstcg.com/decks/list/27586",
+    "retrievedAt": "2026-10-14T18:26:34.869Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "039814505803c8e51ee66461fa686e7b63ed18ba464e4db1fb3a667a6a73bd41"
+  },
+  {
+    "key": "profile-15369",
+    "url": "https://limitlesstcg.com/players/15369",
+    "retrievedAt": "2026-10-14T18:26:36.367Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "5bd12b3ac9e46be18c4e72f0a878ea1ba10bb221748e982431721be0d93de89d"
+  },
+  {
+    "key": "profile-7427",
+    "url": "https://limitlesstcg.com/players/7427",
+    "retrievedAt": "2026-10-14T18:26:37.843Z",
+    "selectedFixtureRows": false,
+    "originalSha256": "6a90da19b67237a4a02568ed62dfa351e80a7f7e39045bb074a0cf40056a9061"
+  },
+  {
+    "key": "main-world-observation",
+    "url": "https://limitlesstcg.com/tournaments/515",
+    "retrievedAt": "2026-10-14T18:34:17.387Z",
+    "purpose": "read-only observation, not selected for database import",
+    "selectedFixtureRows": true,
+    "originalSha256": "fe9f9dfab8743ec1e8b214d09f67ce9b5f243d758c0cc31497c91a9676e56ba7"
+  },
+  {
+    "key": "profile-7427-results",
+    "url": "https://limitlesstcg.com/players/7427/results",
+    "retrievedAt": "2026-10-14T18:34:18.883Z",
+    "purpose": "read-only observation, not selected for database import",
+    "selectedFixtureRows": false,
+    "originalSha256": "43a71657809bccd10702e4482490bac2396cc6cb22668a595cbf0af7d9237c3d"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "name": "tcg-scout",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "scout:repair-dates": "tsx scripts/scout-repair-dates.ts",
+    "scout:catalog": "tsx scripts/scout-catalog.ts",
+    "scout:coverage": "tsx scripts/scout-coverage.ts",
+    "scout:import-catalog": "tsx scripts/scout-import-catalog.ts",
+    "scout:proof": "tsx scripts/scout-proof.ts",
+    "test": "tsx --test packages/data-sources/test/*.test.ts packages/shared/test/*.test.ts packages/application/test/*.test.ts apps/api/test/*.test.ts",
+    "typecheck": "tsc --noEmit && pnpm --filter @tcg-scout/web typecheck",
+    "web:dev": "pnpm --filter @tcg-scout/web dev",
+    "web:build": "pnpm --filter @tcg-scout/web build",
+    "web:preview": "pnpm --filter @tcg-scout/web preview",
+    "test:web": "pnpm --filter @tcg-scout/web test",
+    "db:up": "node scripts/db-up.mjs",
+    "db:generate": "pnpm --filter @tcg-scout/database generate",
+    "db:migrate": "pnpm --filter @tcg-scout/database migrate",
+    "scout:sync": "tsx scripts/scout-sync.ts",
+    "scout:search": "tsx scripts/scout-search.ts",
+    "scout:history": "tsx scripts/scout-history.ts",
+    "test:db": "tsx --test --test-concurrency=1 packages/database/test/*.test.ts",
+    "scout:identity": "tsx scripts/scout-identity.ts",
+    "scout:reconcile": "tsx scripts/scout-reconcile.ts",
+    "api:start": "tsx apps/api/src/server.ts",
+    "scout:expand": "tsx scripts/scout-expand.ts",
+    "scout:main-history": "tsx scripts/scout-main-history.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
