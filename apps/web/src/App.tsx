@@ -36,7 +36,7 @@ export function App() {
     <button className="skip" onClick={() => document.getElementById('content')?.focus()}>Ir para o conteúdo</button>
     <header className="brand"><a href="#/" aria-label="PokéScout, início"><span className="brand-mark" aria-hidden="true">◒</span> PokéScout</a><nav aria-label="Navegação principal"><a href="#/" aria-current={!route.playerId && !route.a && !route.tournaments ? 'page' : undefined}>Buscar</a><a href="#/tournaments" aria-current={route.tournaments ? 'page' : undefined}>Torneios</a></nav><span className="edition"><i /> HISTÓRICO PÚBLICO</span></header>
     <main id="content" tabIndex={-1}>
-      {!route.playerId && !route.a && !route.tournaments && <a className="button" href="#/tournaments">Consultar torneios importados →</a>}
+      {!route.playerId && !route.a && !route.tournaments && <a className="button catalog-shortcut" href="#/tournaments">Consultar torneios importados →</a>}
       <Search hidden={!!route.playerId || !!route.a || route.tournaments} />
       {route.tournaments && <Tournaments />}
       {route.playerId && <History key={route.playerId} playerId={route.playerId} hidden={route.scouting || !!route.entryId || !!route.candidateId} />}
