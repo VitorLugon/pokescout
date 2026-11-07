@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm web:build",
+  "outputDirectory": "apps/web/dist",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://pokescout-api.onrender.com/:path*"
+    }
+  ]
+}
