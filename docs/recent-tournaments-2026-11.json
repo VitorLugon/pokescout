@@ -1,0 +1,444 @@
+{
+  "capturedAt": "2026-11-07T15:24:51.290Z",
+  "database": "local PostgreSQL port 55432",
+  "counts": {
+    "tournaments": 780,
+    "results": 195190,
+    "players": 75822,
+    "lists": 9,
+    "cards": 227,
+    "running": 0
+  },
+  "importedResults": 8392,
+  "events": [
+    {
+      "id": "a7667a66-38b4-40a8-8f0f-708d24c7f190",
+      "source": "limitless-labs",
+      "externalId": "0079",
+      "division": "JR",
+      "name": "Regional Championship Gdańsk (JR)",
+      "country": "PL",
+      "eventDate": "2026-10-31",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 122,
+      "lastSyncedAt": "2026-11-07T15:17:25.660Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0079/JR/standings",
+      "_count": {
+        "entries": 122
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 122,
+          "entriesSaved": 122,
+          "pendingLists": 122,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "122 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "49c89cbb-e0e7-4464-a7e9-e6a5db130d3a",
+      "source": "limitless-labs",
+      "externalId": "0079",
+      "division": "MA",
+      "name": "Regional Championship Gdańsk",
+      "country": "PL",
+      "eventDate": "2026-10-31",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 1739,
+      "lastSyncedAt": "2026-11-07T15:13:32.228Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0079/standings",
+      "_count": {
+        "entries": 1739
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 1739,
+          "entriesSaved": 1739,
+          "pendingLists": 1738,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "1738 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "22477b96-0162-44b9-97dd-efaa6d0309a7",
+      "source": "limitless-labs",
+      "externalId": "0079",
+      "division": "SR",
+      "name": "Regional Championship Gdańsk (SR)",
+      "country": "PL",
+      "eventDate": "2026-10-31",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 262,
+      "lastSyncedAt": "2026-11-07T15:17:24.793Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0079/SR/standings",
+      "_count": {
+        "entries": 262
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 262,
+          "entriesSaved": 262,
+          "pendingLists": 260,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "260 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "244b47d9-2cfb-4ba9-b020-d7400afd08da",
+      "source": "limitless-labs",
+      "externalId": "0078",
+      "division": "JR",
+      "name": "Regional Championship Puebla (JR)",
+      "country": "MX",
+      "eventDate": "2026-10-24",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 82,
+      "lastSyncedAt": "2026-11-07T15:17:29.493Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0078/JR/standings",
+      "_count": {
+        "entries": 82
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 82,
+          "entriesSaved": 82,
+          "pendingLists": 82,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "82 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "1be32504-b4e9-4e90-938b-66f297dd0572",
+      "source": "limitless-labs",
+      "externalId": "0078",
+      "division": "MA",
+      "name": "Regional Championship Puebla",
+      "country": "MX",
+      "eventDate": "2026-10-24",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 2234,
+      "lastSyncedAt": "2026-11-07T15:13:35.184Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0078/standings",
+      "_count": {
+        "entries": 2234
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 2234,
+          "entriesSaved": 2234,
+          "pendingLists": 2222,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "2222 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "7f86ec7e-66e3-4d5c-be73-c59487fcaa7e",
+      "source": "limitless-labs",
+      "externalId": "0078",
+      "division": "SR",
+      "name": "Regional Championship Puebla (SR)",
+      "country": "MX",
+      "eventDate": "2026-10-24",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 152,
+      "lastSyncedAt": "2026-11-07T15:17:28.398Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0078/SR/standings",
+      "_count": {
+        "entries": 152
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 152,
+          "entriesSaved": 152,
+          "pendingLists": 151,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "151 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "b3246b7c-75f3-406f-a414-1a17bccc6504",
+      "source": "limitless-labs",
+      "externalId": "0077",
+      "division": "JR",
+      "name": "Regional Championship Nice (JR)",
+      "country": "FR",
+      "eventDate": "2026-10-17",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 154,
+      "lastSyncedAt": "2026-11-07T15:17:33.002Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0077/JR/standings",
+      "_count": {
+        "entries": 154
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 154,
+          "entriesSaved": 154,
+          "pendingLists": 154,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "154 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "9dd3b567-210c-458e-a9a0-62703b27c315",
+      "source": "limitless-labs",
+      "externalId": "0077",
+      "division": "MA",
+      "name": "Regional Championship Nice",
+      "country": "FR",
+      "eventDate": "2026-10-17",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 2336,
+      "lastSyncedAt": "2026-11-07T15:13:36.972Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0077/standings",
+      "_count": {
+        "entries": 2336
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 2336,
+          "entriesSaved": 2336,
+          "pendingLists": 2330,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "2330 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "b264c9a9-d19d-41ae-8cfd-1a08e6be2805",
+      "source": "limitless-labs",
+      "externalId": "0077",
+      "division": "SR",
+      "name": "Regional Championship Nice (SR)",
+      "country": "FR",
+      "eventDate": "2026-10-17",
+      "resultsCoverage": "COMPLETE_STANDINGS",
+      "reportedPlayerCount": 190,
+      "lastSyncedAt": "2026-11-07T15:17:31.870Z",
+      "sourceUrl": "https://labs.limitlesstcg.com/0077/SR/standings",
+      "_count": {
+        "entries": 190
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 190,
+          "entriesSaved": 190,
+          "pendingLists": 189,
+          "issues": [
+            {
+              "stage": "decklist",
+              "message": "189 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "c9e17096-9eca-4ac3-af46-1976ed36bb19",
+      "source": "limitless-main",
+      "externalId": "584",
+      "division": null,
+      "name": "Regional Gdańsk",
+      "country": "PL",
+      "eventDate": "2026-10-31",
+      "resultsCoverage": "PUBLISHED_RESULTS",
+      "reportedPlayerCount": 1739,
+      "lastSyncedAt": "2026-11-07T15:17:34.330Z",
+      "sourceUrl": "https://limitlesstcg.com/tournaments/584",
+      "_count": {
+        "entries": 323
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 323,
+          "entriesSaved": 323,
+          "pendingLists": 323,
+          "issues": [
+            {
+              "stage": "coverage",
+              "message": "PUBLISHED_RESULTS: published results must not be treated as full standings"
+            },
+            {
+              "stage": "standings",
+              "message": "Received 323 source results; source reports 1739"
+            },
+            {
+              "stage": "tournament",
+              "message": "Source tournament completion is unknown"
+            },
+            {
+              "stage": "decklist",
+              "message": "323 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "c3863de8-9f47-4c5b-a41d-ea68bc7d3d41",
+      "source": "limitless-main",
+      "externalId": "583",
+      "division": null,
+      "name": "Regional Puebla",
+      "country": "MX",
+      "eventDate": "2026-10-24",
+      "resultsCoverage": "PUBLISHED_RESULTS",
+      "reportedPlayerCount": 2234,
+      "lastSyncedAt": "2026-11-07T15:17:35.189Z",
+      "sourceUrl": "https://limitlesstcg.com/tournaments/583",
+      "_count": {
+        "entries": 369
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 369,
+          "entriesSaved": 369,
+          "pendingLists": 369,
+          "issues": [
+            {
+              "stage": "coverage",
+              "message": "PUBLISHED_RESULTS: published results must not be treated as full standings"
+            },
+            {
+              "stage": "standings",
+              "message": "Received 369 source results; source reports 2234"
+            },
+            {
+              "stage": "tournament",
+              "message": "Source tournament completion is unknown"
+            },
+            {
+              "stage": "decklist",
+              "message": "369 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    },
+    {
+      "id": "68273f2f-2403-4da6-8ae1-acf8bf671cbd",
+      "source": "limitless-main",
+      "externalId": "582",
+      "division": null,
+      "name": "Regional Nice",
+      "country": "FR",
+      "eventDate": "2026-10-17",
+      "resultsCoverage": "PUBLISHED_RESULTS",
+      "reportedPlayerCount": 2336,
+      "lastSyncedAt": "2026-11-07T15:17:36.519Z",
+      "sourceUrl": "https://limitlesstcg.com/tournaments/582",
+      "_count": {
+        "entries": 429
+      },
+      "syncRuns": [
+        {
+          "status": "PARTIAL",
+          "entriesReceived": 429,
+          "entriesSaved": 429,
+          "pendingLists": 429,
+          "issues": [
+            {
+              "stage": "coverage",
+              "message": "PUBLISHED_RESULTS: published results must not be treated as full standings"
+            },
+            {
+              "stage": "standings",
+              "message": "Received 429 source results; source reports 2336"
+            },
+            {
+              "stage": "tournament",
+              "message": "Source tournament completion is unknown"
+            },
+            {
+              "stage": "decklist",
+              "message": "429 available lists remain pending/failed; per-run cap 0"
+            }
+          ]
+        }
+      ],
+      "quarantinedResultCount": 0
+    }
+  ],
+  "proof": [
+    {
+      "event": "Regional Championship Gdańsk",
+      "winner": "Aarni Karjala",
+      "historyApi": "ok",
+      "periodEvidenceApi": "ok"
+    },
+    {
+      "event": "Regional Championship Puebla",
+      "winner": "Andrew Hedrick",
+      "historyApi": "ok",
+      "periodEvidenceApi": "ok"
+    },
+    {
+      "event": "Regional Championship Nice",
+      "winner": "Luc Gantner",
+      "historyApi": "ok",
+      "periodEvidenceApi": "ok"
+    }
+  ],
+  "pending": 0
+}

@@ -6,14 +6,14 @@ import { LimitlessLabsSource, LimitlessMainSource, diskCachedReader, type Catalo
 import { createPublicClient } from '../packages/data-sources/src/limitless-labs/client.js';
 import { createMainClient } from '../packages/data-sources/src/limitless-main/client.js';
 try {
-  const { values } = parseArgs({ options: { manifest: { type: 'string', default: 'config/labs-catalog.json' }, apply: { type: 'boolean', default: false }, 'max-events': { type: 'string', default: '5' }, 'stop-file': { type: 'string', default: '.cache/catalog-import.stop' } } });
+  const { values } = parseArgs({ options: { manifest: { type: 'string', default: 'config/labs-catalog.json' }, apply: { type: 'boolean', default: false }, 'max-events': { type: 'string', default: '5' }, 'stop-file': { type: 'string', default: '.cache/catalog-import.stop' }, 'cache-dir': { type: 'string', default: '.cache/tournament-html' } } });
   void withDatabase(async db => {
     let stopRequested = false;
     const stop = () => { stopRequested = true; console.error('Stop requested: finishing the current event before exit.'); };
     const manifest = JSON.parse(await readFile(values.manifest,'utf8')) as { events: CatalogEvent[] };
     const service = new CatalogImportService(db, {
-      'limitless-labs': new LimitlessLabsSource(diskCachedReader(createPublicClient(), '.cache/tournament-html')),
-      'limitless-main': new LimitlessMainSource(diskCachedReader(createMainClient(), '.cache/tournament-html')),
+      'limitless-labs': new LimitlessLabsSource(diskCachedReader(createPublicClient(), values['cache-dir'])),
+      'limitless-main': new LimitlessMainSource(diskCachedReader(createMainClient(), values['cache-dir'])),
     });
     const plan = await service.preview(manifest.events);
     if (!values.apply) { console.log(JSON.stringify({ mode: 'PREVIEW_NO_HTTP', ...plan }, null, 2)); return; }

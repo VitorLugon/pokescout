@@ -4,6 +4,10 @@ Milestones 1–6 provide public Limitless Labs and main-site ingestion, PostgreS
 
 Requirements: Node.js 22.20+, pnpm 11.25 and Docker Desktop with its Linux engine running.
 
+## Latest historical update — 7 November 2026
+
+Nice, Puebla and Gdańsk (October 2026) were added to the local PostgreSQL database: nine Labs divisions and three Main event records, totaling 8,392 new source results. Earlier data and imported lists were preserved; remote hosted databases were not updated. See [coverage and validation](docs/recent-tournaments-2026-11.md) and the [explicit selection](config/recent-2026-11.json). The controlled import CLI supports `--cache-dir` to choose a separate public HTML snapshot directory.
+
 ## Expanded catalog and Pokémon sprites
 
 The home page now links to **Consultar torneios importados** (`#/tournaments`),
